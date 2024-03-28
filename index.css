@@ -21,6 +21,7 @@ a {
 .header .nlist {
   position: relative;
   display: inline-block;
+  padding-right: 10px;
 }
 .nlist .nlistdropdown {
   position: absolute;
@@ -50,7 +51,7 @@ a {
   border-radius: 90px;
 }
 .header .ntrail a {
-  padding: 15px 25px;
+  padding: 15px 40px;
   border: 2px solid #fff;
   background-color: var(--primary-color);
   color: #fff;
@@ -496,7 +497,7 @@ a {
   font-weight: 500;
   color: rgb(68, 68, 77);
 }
-.blog span {
+.blog .one span {
   font-size: 14px;
   font-weight: 500;
   color: var(--primary-color);
@@ -547,30 +548,23 @@ a {
 }
 .phone {
   position: relative;
-  animation: phone 6s infinite;
+  animation: phone 5s linear infinite;
 }
 @keyframes phone {
   0% {
     left: 0px;
     right: 0px;
   }
-  25% {
-    left: 0px;
-    right: 20px;
-  }
   50% {
-    left: 20px;
-    right: 20px;
-  }
-  75% {
-    left: 20px;
-    right: 0px;
+    left: 30px;
+    right: 30px;
   }
   100% {
     left: 0px;
     right: 0px;
   }
 }
+
 /*-----*/
 /*-----*/
 .footer {
