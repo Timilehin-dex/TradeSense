@@ -1,3 +1,6 @@
+body {
+  scroll-behavior: smooth;
+}
 :root {
   --primary-color: rgb(29, 29, 31);
   --secondary-color: rgb(213, 249, 103);
@@ -33,6 +36,22 @@ a {
 }
 .header .nlist:hover .nlistdropdown {
   display: block;
+}
+.header .hmenu {
+  display: none;
+}
+
+@media (min-width: 300px) and (max-width: 991.98px) {
+  .header ul {
+    display: none;
+  }
+  .header .hmenu {
+    display: block;
+  }
+  .header img {
+    margin-inline-end: auto;
+    width: 100px;
+  }
 }
 /* list hover ends*/
 .header .nlist .nlink {
@@ -74,6 +93,11 @@ a {
   color: black;
   border-radius: 90px;
 }
+@media (min-width: 300px) and (max-width: 991.98px) {
+  .header .ntrail a {
+    padding: 8px 20px;
+  }
+}
 /* header end*/
 .test {
   background-color: var(--primary-color);
@@ -83,6 +107,9 @@ a {
   line-height: 18px;
   padding: 10px 25px;
   color: #fff;
+}
+.first {
+  padding: 150px 0 90px 0;
 }
 .first .one {
   text-align: center;
@@ -100,6 +127,20 @@ a {
   font-weight: 500;
   line-height: 27px;
   padding: 0 100px;
+}
+@media (min-width: 300px) and (max-width: 991.98px) {
+  .first .one h2 {
+    font-size: 60px;
+  }
+}
+@media (min-width: 300px) and (max-width: 750px) {
+  .first {
+    padding: 150px 0 40px 0;
+  }
+  .first .one h2 {
+    font-size: 40px;
+    letter-spacing: 0;
+  }
 }
 /*-----*/
 /*-----*/
@@ -258,6 +299,18 @@ a {
     transform: translateX(0rem);
   }
 }
+@media (min-width: 991.98px) and (max-width: 1199px) {
+  .last .image {
+    top: 12%;
+    left: 21%;
+  }
+}
+@media (min-width: 300px) and (max-width: 991.98px) {
+  .last .image {
+    display: none;
+  }
+}
+
 .last h2 {
   margin-bottom: 30px;
   font-size: 48px;
@@ -285,6 +338,21 @@ a {
 .last .submit:hover {
   background-color: var(--primary-color);
   color: var(--secondary-color);
+}
+
+@media (min-width: 300px) and (max-width: 991.98px) {
+  .last .search {
+    width: 65%;
+  }
+}
+@media (min-width: 300px) and (max-width: 750px) {
+  .last .search {
+    width: 70%;
+  }
+  .last .submit {
+    padding: 16px 32px;
+    margin: 5px 0 0 0;
+  }
 }
 /*-----*/
 .footer {
@@ -335,4 +403,11 @@ a {
 .footer .item ul li:hover {
   text-decoration: underline;
 }
+@media (min-width: 300px) and (max-width: 992px) {
+  .footer .one {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+}
+
 /*-----*/

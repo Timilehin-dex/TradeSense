@@ -1,3 +1,6 @@
+body {
+  scroll-behavior: smooth;
+}
 :root {
   --primary-color: rgb(29, 29, 31);
   --secondary-color: rgb(213, 249, 103);
@@ -36,7 +39,24 @@ a {
 .header .nlist:hover .nlistdropdown {
   display: block;
 }
+.header .hmenu {
+  display: none;
+}
+
 /* list hover ends*/
+@media (min-width: 300px) and (max-width: 991.98px) {
+  .header ul {
+    display: none;
+  }
+  .header .hmenu {
+    display: block;
+  }
+  .header img {
+    margin-inline-end: auto;
+    width: 100px;
+  }
+}
+/**/
 .header .nlist .nlink {
   font-size: 14px;
   font-weight: 500;
@@ -64,7 +84,25 @@ a {
   color: black;
   border-radius: 90px;
 }
+@media (min-width: 300px) and (max-width: 991.98px) {
+  .header .ntrail a {
+    padding: 8px 20px;
+  }
+}
 /* header end*/
+.thepadding {
+  padding: 150px 0 500px 0;
+}
+@media (min-width: 300px) and (max-width: 991.98px) {
+  .thepadding {
+    padding: 150px 0 300px 0;
+  }
+  @media (min-width: 300px) and (max-width: 450px) {
+    .thepadding {
+      padding: 150px 0 200px 0;
+    }
+  }
+}
 /*-----*/
 .one-body {
   text-align: center;
@@ -100,7 +138,7 @@ a {
   border: 0;
   border-radius: 50px;
   height: 64px;
-  width: 40%;
+  width: 50%;
 }
 .one-body .submit {
   font-size: 16px;
@@ -116,7 +154,40 @@ a {
   background-color: var(--primary-color);
   color: #fff;
 }
+@media (min-width: 300px) and (max-width: 991.98px) {
+  .one-body h2 {
+    font-size: 50px;
+    font-weight: 600;
+  }
+  .one-body p {
+    padding: 0 10px;
+  }
+  .one-body .search {
+    width: 80%;
+  }
+}
+@media (min-width: 300px) and (max-width: 750px) {
+  .one-body .submit {
+    margin-top: 5px;
+    padding: 16px 32px;
+    margin-left: 0px;
+  }
+}
+
 /*-----*/
+.two-body img {
+  margin-top: -450px;
+}
+@media (min-width: 300px) and (max-width: 991.98px) {
+  .two-body img {
+    margin-top: -250px;
+  }
+  @media (min-width: 300px) and (max-width: 450px) {
+    .two-body img {
+      margin-top: -150px;
+    }
+  }
+}
 /*-----*/
 .first .about {
   align-content: center;
@@ -147,12 +218,21 @@ a {
   padding-left: 100px;
   padding-right: 0;
 }
+@media (min-width: 300px) and (max-width: 991.98px) {
+  .first .image {
+    align-items: center;
+    text-align: center;
+  }
+  .first .image {
+    margin-top: 15px;
+    padding: 0;
+  }
+}
 /*-----*/
 /*-----*/
 
 .second .about {
   align-content: center;
-  padding-left: 50px;
 }
 .second .about h2 {
   font-size: 45px;
@@ -164,21 +244,8 @@ a {
   font-weight: 400;
   margin-bottom: 40px;
 }
-.second .image {
-  position: relative;
-}
-.second .image i {
-  border-radius: 50%;
-  background-color: var(--secondary-color);
-  position: absolute;
-  padding: 20px;
-  font-size: 40px;
-  top: 45%;
-  left: 45%;
-}
 .second .image img {
   border-radius: 20px;
-  position: relative;
 }
 .second .about .zero {
   padding: 16px;
@@ -209,11 +276,32 @@ a {
   width: 32px;
   margin-bottom: 18px;
 }
+@media (min-width: 300px) and (max-width: 991.98px) {
+  .second .image {
+    text-align: center;
+  }
+  .second .about h2 {
+    margin-top: 15px;
+    font-size: 40px;
+  }
+  .second .about p {
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+}
 /*-----*/
 /*-----*/
 .third {
   text-align: center;
   background-color: var(--primary-color);
+}
+.third h2 {
+  font-size: 37px;
+  font-weight: 600;
+  color: #fff;
+}
+.third h2 span {
+  color: rgb(213, 249, 103);
 }
 .third .one span {
   border: 5px solid rgb(97, 97, 99);
@@ -224,14 +312,7 @@ a {
   font-size: 32px;
   font-weight: 600;
 }
-.third h2 {
-  font-size: 37px;
-  font-weight: 600;
-  color: #fff;
-}
-.third h2 span {
-  color: rgb(213, 249, 103);
-}
+
 .third .one h2 {
   font-size: 32px;
   font-weight: 600;
@@ -242,6 +323,11 @@ a {
   font-weight: 400;
   line-height: 27px;
   color: #fff;
+}
+@media (min-width: 300px) and (max-width: 991.98px) {
+  .third .one {
+    padding: 20px;
+  }
 }
 /*-----*/
 /*-----*/
@@ -307,6 +393,11 @@ a {
 .box img {
   margin-right: 10px;
   line-height: 24px;
+}
+@media (min-width: 300px) and (max-width: 750px) {
+  .four h2 {
+    font-size: 24px;
+  }
 }
 /*-----*/
 /*-----*/
@@ -476,6 +567,42 @@ a {
   font-size: 18px;
   font-weight: 500;
 }
+@media (min-width: 992px) and (max-width: 1400px) {
+  .items a {
+    padding: 18px 10%;
+  }
+  .items-active a {
+    padding: 18px 10%;
+  }
+  @media (min-width: 992px) and (max-width: 1200px) {
+    .items {
+      padding-bottom: 90px;
+    }
+  }
+}
+@media (min-width: 300px) and (max-width: 992px) {
+  .items {
+    margin: 10px 15%;
+  }
+  .items-active {
+    margin: 10px 15%;
+  }
+  .items a {
+    padding: 18px 5%;
+  }
+  .items-active a {
+    padding: 18px 5%;
+  }
+}
+@media (min-width: 300px) and (max-width: 800px) {
+  .items {
+    margin: 10px 7%;
+  }
+  .items-active {
+    margin: 10px 7%;
+  }
+}
+.items
 /*-----*/
 /*-----*/
 .blog {
@@ -525,6 +652,17 @@ a {
   font-size: 14px;
   font-weight: 400;
 }
+@media (min-width: 300px) and (max-width: 992px) {
+  .four {
+    margin-bottom: 40px;
+  }
+  .blog {
+    margin-top: 15px;
+  }
+  .blog .image {
+    text-align: center;
+  }
+}
 /*-----*/
 /*-----*/
 .last {
@@ -546,6 +684,10 @@ a {
   font-size: 16px;
   font-weight: 400;
 }
+.last .image {
+  display: flex;
+  column-gap: 30px;
+}
 .phone {
   position: relative;
   animation: phone 5s linear infinite;
@@ -564,7 +706,29 @@ a {
     right: 0px;
   }
 }
-
+@media (min-width: 300px) and (max-width: 992px) {
+  .last {
+    padding-left: 0px;
+    text-align: center;
+  }
+  .last h2 {
+    font-size: 50px;
+  }
+  .last .image {
+    display: inline;
+  }
+  .last .image img {
+    padding: 10px;
+  }
+  .phone {
+    text-align: center;
+  }
+}
+@media (min-width: 300px) and (max-width: 660px) {
+  .phone {
+    animation: 0;
+  }
+}
 /*-----*/
 /*-----*/
 .footer {
@@ -614,4 +778,10 @@ a {
 }
 .footer .item ul li:hover {
   text-decoration: underline;
+}
+@media (min-width: 300px) and (max-width: 992px) {
+  .footer .one {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
 }

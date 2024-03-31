@@ -1,3 +1,6 @@
+body {
+  scroll-behavior: smooth;
+}
 :root {
   --primary-color: rgb(29, 29, 31);
   --secondary-color: rgb(213, 249, 103);
@@ -33,6 +36,22 @@ a {
 }
 .header .nlist:hover .nlistdropdown {
   display: block;
+}
+.header .hmenu {
+  display: none;
+}
+
+@media (min-width: 300px) and (max-width: 991.98px) {
+  .header ul {
+    display: none;
+  }
+  .header .hmenu {
+    display: block;
+  }
+  .header img {
+    margin-inline-end: auto;
+    width: 100px;
+  }
 }
 /* list hover ends*/
 .header .nlist .nlink {
@@ -74,6 +93,11 @@ a {
   color: black;
   border-radius: 90px;
 }
+@media (min-width: 300px) and (max-width: 991.98px) {
+  .header .ntrail a {
+    padding: 8px 20px;
+  }
+}
 /* header end*/
 /*-----*/
 .test {
@@ -102,6 +126,21 @@ a {
   line-height: 27px;
   padding: 0 100px;
 }
+@media (min-width: 300px) and (max-width: 991.98px) {
+  .first .one h2 {
+    font-size: 60px;
+  }
+}
+@media (min-width: 300px) and (max-width: 750px) {
+  .first .one h2 {
+    font-size: 40px;
+    letter-spacing: 0;
+  }
+  .first .one p {
+    font-size: 16px;
+    padding: 0;
+  }
+}
 /*-----*/
 /*-----*/
 .second {
@@ -114,6 +153,11 @@ a {
   padding: 50px 30px;
   background-color: var(--first-color);
   border-radius: 16px;
+}
+@media (min-width: 300px) and (max-width: 991.98px) {
+  .second .one {
+    margin-top: 10px;
+  }
 }
 .second i {
   margin-bottom: 20px;
@@ -188,6 +232,23 @@ a {
   background-color: black;
   color: #fff;
 }
+@media (min-width: 300px) and (max-width: 991.98px) {
+  .cform h2 {
+    font-size: 33px;
+  }
+  .second .cform .fform {
+    margin: 0 8%;
+  }
+}
+@media (min-width: 300px) and (max-width: 750px) {
+  .cform h2 {
+    margin: 10px;
+    font-size: 28px;
+  }
+  .second .cform .fform {
+    margin: 0;
+  }
+}
 /*-----*/
 /*-----*/
 .last {
@@ -223,6 +284,31 @@ a {
     transform: translateX(0rem);
   }
 }
+@media (min-width: 991.98px) and (max-width: 1199px) {
+  .last .image {
+    top: 12%;
+    left: 21%;
+  }
+}
+@media (min-width: 300px) and (max-width: 991.98px) {
+  .last .image {
+    display: none;
+  }
+}
+@media (min-width: 300px) and (max-width: 991.98px) {
+  .last .search {
+    width: 65%;
+  }
+}
+@media (min-width: 300px) and (max-width: 750px) {
+  .last .search {
+    width: 70%;
+  }
+  .last .submit {
+    padding: 16px 32px;
+    margin: 5px 0 0 0;
+  }
+}
 .last h2 {
   margin-bottom: 30px;
   font-size: 48px;
@@ -250,6 +336,20 @@ a {
 .last .submit:hover {
   background-color: var(--primary-color);
   color: var(--secondary-color);
+}
+@media (min-width: 300px) and (max-width: 991.98px) {
+  .last .search {
+    width: 65%;
+  }
+}
+@media (min-width: 300px) and (max-width: 750px) {
+  .last .search {
+    width: 70%;
+  }
+  .last .submit {
+    padding: 16px 32px;
+    margin: 5px 0 0 0;
+  }
 }
 /*-----*/
 .footer {
@@ -299,5 +399,11 @@ a {
 }
 .footer .item ul li:hover {
   text-decoration: underline;
+}
+@media (min-width: 300px) and (max-width: 992px) {
+  .footer .one {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
 }
 /*-----*/

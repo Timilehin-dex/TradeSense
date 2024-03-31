@@ -20,58 +20,61 @@
     <div class="main">
       <!--header start-->
       <div class="header fixed-top" style="background-color: rgb(29, 29, 31)">
-        <div
-          class="container d-flex justify-content-between align-items-center"
-        >
-          <img src="logo-white.png" alt="" />
-          <div>
-            <ul class="nav">
-              <li class="nav-item nlist">
-                <a class="nav-link nlink" href="index.html">Home </a>
-              </li>
-              <li class="nav-item nlist">
-                <a class="nav-link nlink" href="">About Us</a>
-              </li>
+        <div class="container">
+          <div class="d-flex justify-content-between align-items-center">
+            <img src="logo-white.png" alt="" />
+            <div>
+              <ul class="nav">
+                <li class="nav-item nlist">
+                  <a class="nav-link nlink" href="index.html">Home </a>
+                </li>
+                <li class="nav-item nlist">
+                  <a class="nav-link nlink" href="">About Us</a>
+                </li>
 
-              <li class="nav-item dropdown nlist">
-                <a
-                  class="nav-link dropdown-toggle nlink"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                  href="blog.html"
-                >
-                  Blog</a
-                >
-                <ul class="dropdown-menu nlistdropdown">
-                  <li>
-                    <a class="dropdown-item" href="blog.html">Blog</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="blog-single.html"
-                      >Blog Single</a
-                    >
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item nlist">
-                <a
-                  class="nav-link nlink"
-                  style="margin-right: 0"
-                  href="contact.html"
-                >
-                  Contact</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div class="ntrail">
-            <a href="">Request a Demo</a>
+                <li class="nav-item dropdown nlist">
+                  <a
+                    class="nav-link dropdown-toggle nlink"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    href="blog.html"
+                  >
+                    Blog</a
+                  >
+                  <ul class="dropdown-menu nlistdropdown">
+                    <li>
+                      <a class="dropdown-item" href="blog.html">Blog</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="blog-single.html"
+                        >Blog Single</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item nlist">
+                  <a
+                    class="nav-link nlink"
+                    style="margin-right: 0"
+                    href="contact.html"
+                  >
+                    Contact</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="ntrail">
+              <a href="">Request a Demo</a>
+            </div>
+            <div class="hmenu">
+              <a href=""><i class="bx bx-menu"></i></a>
+            </div>
           </div>
         </div>
       </div>
       <!--header ends-->
       <!--one body-->
-      <div style="padding: 150px 0 500px 0">
+      <div class="thepadding">
         <div class="container">
           <div class="one-body">
             <div style="margin-bottom: 40px">
@@ -110,21 +113,18 @@
       <!--one body ends-->
     </div>
     <!---->
-    <div class="container">
-      <div style="text-align: center">
-        <img
-          style="margin-top: -450px"
-          class="img-fluid"
-          src="dashboard.png"
-          alt=""
-        />
-        <div style="padding-top: 110px">
-          <div>
-            <h5 style="margin-bottom: 50px">TRUSTED BY INDUSTRY LEADERS</h5>
+    <section class="two-body">
+      <div class="container">
+        <div style="text-align: center">
+          <img class="img-fluid" src="dashboard.png" alt="" />
+          <div style="padding-top: 110px">
+            <div>
+              <h5 style="margin-bottom: 50px">TRUSTED BY INDUSTRY LEADERS</h5>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
     <!---->
     <section class="first" style="padding: 130px 0">
       <div class="container">
@@ -159,10 +159,9 @@
           <div class="col-lg-5">
             <div class="image">
               <img class="img-fluid" src="user-emp.png" alt="" />
-              <i class="bx bx-play"></i>
             </div>
           </div>
-          <div class="col-lg-7">
+          <div class="col-lg-7 about">
             <div class="about">
               <h2>User empowerment through personalized experiences.</h2>
               <p>
@@ -204,7 +203,7 @@
             <h2>Your simplified <span> 3-step</span> workflow.</h2>
           </div>
           <div class="row">
-            <div class="col">
+            <div class="col-lg-4">
               <div class="one">
                 <span>1 </span>
                 <h2>Easy Setup</h2>
@@ -215,7 +214,7 @@
                 </p>
               </div>
             </div>
-            <div class="col">
+            <div class="col-lg-4">
               <div class="one">
                 <span>2</span>
                 <h2>Configuration</h2>
@@ -226,7 +225,7 @@
                 </p>
               </div>
             </div>
-            <div class="col">
+            <div class="col-lg-4">
               <div class="one">
                 <span>3</span>
                 <h2>Verification and Updates</h2>
@@ -477,7 +476,7 @@
         <div class="row">
           <div class="col-lg-6">
             <div class="blog">
-              <div>
+              <div class="image">
                 <img class="img-fluid" src="blog-2.png" alt="" />
               </div>
               <div class="one">
@@ -498,7 +497,7 @@
           </div>
           <div class="col-lg-6">
             <div class="blog">
-              <div>
+              <div class="image">
                 <img class="img-fluid" src="blog-1.png" alt="" />
               </div>
               <div class="one">
@@ -537,14 +536,16 @@
                     experience.
                   </p>
                 </div>
-                <div style="display: flex; column-gap: 30px">
+                <div class="image">
                   <a href=""><img src="google play.png" alt="" /></a>
                   <a href=""> <img src="ios.png" alt="" /></a>
                 </div>
               </div>
             </div>
-            <div class="col-lg-5">
-              <div class="phone"><img src="Phone.png" alt="" /></div>
+            <div class="col-lg-5 phone">
+              <div class="phone">
+                <img class="img-fluid" src="Phone.png" alt="" />
+              </div>
             </div>
           </div>
         </div>
@@ -555,7 +556,7 @@
       <div class="footer">
         <div class="container">
           <div class="row">
-            <div class="col-lg-4">
+            <div class="col-lg-4 col-md-12">
               <div class="one">
                 <div>
                   <img style="margin-bottom: 20px" src="logo.png" alt="" />
@@ -572,7 +573,8 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-2">
+
+            <div class="col-lg-2 col-md-4">
               <div class="item">
                 <h4>Pages</h4>
                 <ul>
@@ -583,7 +585,7 @@
                 </ul>
               </div>
             </div>
-            <div class="col-lg-2">
+            <div class="col-lg-2 col-md-4">
               <div class="item">
                 <h4>Help</h4>
                 <ul>
@@ -594,7 +596,7 @@
                 </ul>
               </div>
             </div>
-            <div class="col-lg-2">
+            <div class="col-lg-2 col-md-4">
               <div class="item">
                 <h4>Resources</h4>
                 <ul>
