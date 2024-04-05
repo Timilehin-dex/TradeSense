@@ -188,6 +188,7 @@ a {
 .two-body img {
   margin-top: -450px;
   border-radius: 24px;
+  border: 0.5px solid var(--primary-color);
 }
 @media (min-width: 300px) and (max-width: 991.98px) {
   .two-body img {
@@ -280,8 +281,21 @@ a {
   font-weight: 400;
   margin-bottom: 40px;
 }
+.second .image {
+  border: 1px solid var(--primary-color);
+  border-radius: 24px;
+}
 .second .image img {
-  border-radius: 20px;
+  width: 49.5%;
+  height: 600px;
+}
+.second .image .a {
+  border-top-left-radius: 24px;
+  border-bottom-left-radius: 24px;
+}
+.second .image .b {
+  border-top-right-radius: 24px;
+  border-bottom-right-radius: 24px;
 }
 .second .about .zero {
   padding: 16px;
