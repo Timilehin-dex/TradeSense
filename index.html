@@ -14,6 +14,7 @@
       href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
     />
     <link rel="stylesheet" href="index.css " />
+    <link rel="stylesheet" href="menu.css" />
     <title>Optic</title>
   </head>
   <body>
@@ -22,14 +23,16 @@
       <div class="header fixed-top" style="background-color: rgb(29, 29, 31)">
         <div class="container">
           <div class="d-flex justify-content-between align-items-center">
-            <img src="logo-white.png" alt="" />
+            <a href="index.html">
+              <img src="tradesensewhite-removebg-preview.png" alt=""
+            /></a>
             <div>
               <ul class="nav">
                 <li class="nav-item nlist">
                   <a class="nav-link nlink" href="index.html">Home </a>
                 </li>
                 <li class="nav-item nlist">
-                  <a class="nav-link nlink" href="">About Us</a>
+                  <a class="nav-link nlink" href="#aboutus">About Us</a>
                 </li>
 
                 <li class="nav-item dropdown nlist">
@@ -64,15 +67,47 @@
               </ul>
             </div>
             <div class="ntrail">
-              <a href="">Request a Demo</a>
+              <a href="">Request Free Trial</a>
             </div>
             <div class="hmenu">
-              <a href=""><i class="bx bx-menu"></i></a>
+              <a href="" data-bs-toggle="modal" data-bs-target="#reg-modal"
+                ><i class="bx bx-menu"></i
+              ></a>
             </div>
           </div>
         </div>
       </div>
       <!--header ends-->
+      <!-- <div
+        class="modal fade"
+        id="reg-modal"
+        tabindex="-1"
+        aria-labelledby="modal-title"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-body menu-list">
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="">About Us</a></li>
+                <li class="mblog">
+                  <a href="#">Blog</a>
+                  <ul class="mdropdown">
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="blog-single.html">Blog Single</a></li>
+                  </ul>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+              <div>
+                <a href="">Request a Demo</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+      <!---->
       <!--one body-->
       <div class="thepadding">
         <div class="container">
@@ -81,13 +116,13 @@
               <span class="trust">TRUSTED BY OVER +55,000</span>
             </div>
             <h2>
-              The guide to launching your successful <span>startup.</span>
+              Democratising access to <br />Traditional <span>Trade Data</span>
             </h2>
             <p>
-              Leverage the potential of cutting-edge AI-driven algorithms,
-              dynamic data analytics, and efficient workflow streamlining to
-              pinpoint strategic opportunities for expansion, expenditure
-              minimization, and opera.
+              TradeSense is a traditional trade intelligence services provider
+              with a focus to Organise, Analyse, democratise markets and trade
+              data in ways that allows brands to plan better, cut cost, improve
+              productivity, and make informed business decisions.
             </p>
 
             <form action="">
@@ -116,7 +151,7 @@
     <section class="two-body">
       <div class="container">
         <div style="text-align: center">
-          <img class="img-fluid" src="dashboard.png" alt="" />
+          <img class="img-fluid" src="bodyimage.jpeg" alt="" />
           <div style="padding-top: 110px">
             <div>
               <h5 style="margin-bottom: 50px">TRUSTED BY INDUSTRY LEADERS</h5>
@@ -125,24 +160,68 @@
         </div>
       </div>
     </section>
-    <!---->
-    <section class="first" style="padding: 130px 0">
+    <section>
+      <div class="logos">
+        <div class="logos-slide">
+          <img src="logo-black-1.png" alt="" />
+          <img src="logo-black-2.png" alt="" />
+          <img src="logo-black-3.png" alt="" />
+          <img src="logo-black-1.png" alt="" />
+          <img src="logo-black-2.png" alt="" />
+          <img src="logo-black-3.png" alt="" />
+        </div>
+
+        <div class="logos-slide">
+          <img src="logo-black-1.png" alt="" />
+          <img src="logo-black-2.png" alt="" />
+          <img src="logo-black-3.png" alt="" />
+          <img src="logo-black-1.png" alt="" />
+          <img src="logo-black-2.png" alt="" />
+          <img src="logo-black-3.png" alt="" />
+        </div>
+      </div>
+    </section>
+    <!--About Us-->
+    <section class="first" id="aboutus" style="padding: 130px 0">
       <div class="container">
         <div class="row">
           <div class="col-lg-6 about">
-            <h2>Ensuring secure data storage.</h2>
+            <h2>About Us</h2>
             <p>
-              In today's data-driven world, the security and integrity of stored
-              data are paramount. Whether it's personal information, business
-              records, or sensitive government data, ensuring secure data
-              storage is essential.
+              TradSense® is a route to market automation and trade intelligence
+              services provider. <br />
+              We are focused on organising, analyzing, and standardising market
+              and consumer data in ways that allows our customers to cut cost,
+              improve productivity, and make informed business decisions
             </p>
-            <div class="d-flex" style="column-gap: 50px">
-              <div>
-                <h3>10X<span>More effective</span></h3>
-              </div>
-              <div>
-                <h3>100% <span>Easier to use</span></h3>
+            <div>
+              <div class="row">
+                <div class="col-lg-3">
+                  <div class="fabout"><h3>Market Entry</h3></div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="fabout"><h3>Market Expansion</h3></div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="fabout">
+                    <h3>Route to Market Optimisation</h3>
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="fabout"><h3>Outlet Enumeration</h3></div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="fabout"><h3>Outlet Validation</h3></div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="fabout"><h3>Distribution Advisory</h3></div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="fabout"><h3>Competition Analysis</h3></div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="fabout"><h3>Sales Automation</h3></div>
+                </div>
               </div>
             </div>
           </div>
@@ -152,6 +231,7 @@
         </div>
       </div>
     </section>
+    <!--About Us-->
     <!---->
     <section class="second" style="padding-bottom: 130px">
       <div class="container">
@@ -163,28 +243,49 @@
           </div>
           <div class="col-lg-7 about">
             <div class="about">
-              <h2>User empowerment through personalized experiences.</h2>
+              <h2>The Platform - Route Planning Mapping and Analysis.</h2>
               <p>
-                In today's data-driven world, the security and integrity of
-                stored data are paramount whether it's personal information,
-                business records, or sensitive government.
+                View, Analyse, Filter and assign Territories over an Active GIS
+                MAP.
               </p>
-              <div class="d-flex">
-                <div class="zero" style="margin-right: 10px">
-                  <i class="bx bx-check"></i>
-                  <h5>Workflow Automation</h5>
-                  <p>
-                    Automation features enable businesses to automate routine
-                    tasks.
-                  </p>
+              <div class="row">
+                <div class="col-lg-4">
+                  <div class="zero">
+                    <i class="bx bx-location-plus"></i>
+                    <h5>Polygon Creations</h5>
+                    <p>
+                      Create and Assign multiple polygons (bits) to your field
+                      team.
+                    </p>
+                  </div>
                 </div>
-                <div class="zero" style="margin-left: 10px">
-                  <i class="bx bx-check"></i>
-                  <h5>Workflow Automation</h5>
-                  <p>
-                    Automation features enable businesses to automate routine
-                    tasks.
-                  </p>
+                <div class="col-lg-4">
+                  <div class="zero">
+                    <i class="bx bx-location-plus"></i>
+                    <h5>Filter</h5>
+                    <p>Filter by Outlet Channel, Category, Size and more.</p>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="zero">
+                    <i class="bx bx-location-plus"></i>
+                    <h5>Filter</h5>
+                    <p>Filter by Outlet Channel, Category, Size and more.</p>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="zero">
+                    <i class="bx bx-location-plus"></i>
+                    <h5>Filter</h5>
+                    <p>Filter by Outlet Channel, Category, Size and more.</p>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="zero">
+                    <i class="bx bx-location-plus"></i>
+                    <h5>Filter</h5>
+                    <p>Filter by Outlet Channel, Category, Size and more.</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -193,6 +294,17 @@
       </div>
     </section>
     <!---->
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6"></div>
+          <div class="col-lg-6">
+            <img class="img-fluid" src="map.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--work flow-->
     <section class="third" style="padding: 130px 0">
       <div class="container">
         <div>
@@ -206,33 +318,66 @@
             <div class="col-lg-4">
               <div class="one">
                 <span>1 </span>
-                <h2>Easy Setup</h2>
+                <h2>Enumeration</h2>
                 <p>
-                  The first step in the easy 3-step software setup process is
-                  the installation phase. This phase is designed to be
-                  straightforward.
+                  Outlet GIS Mapping <br />
+                  Outlet Sizing, Status and Open <br />
+                  Product Segment Audit <br />
+                  Category Audit <br />
+                  POSM Audit <br />
+                  Asset Audit <br />
+                  Open Market Audit <br />
+                  <b>On Self Image Audit</b> <br />
+                  Facility Audit
                 </p>
               </div>
             </div>
             <div class="col-lg-4">
               <div class="one">
                 <span>2</span>
-                <h2>Configuration</h2>
+                <h2>Data and Operations</h2>
                 <p>
-                  The first step in the easy 3-step software setup process is
-                  the installation phase. This phase is designed to be
-                  straightforward.
+                  Data cleaning <br />
+
+                  Image Analysis<br />
+
+                  Categorisation<br />
+
+                  Checking for Duplicity<br />
+
+                  Data Update<br />
+
+                  Storage<br />
+
+                  Managing Enumerators<br />
+
+                  Coverage expansion<br />
+
+                  Deepening Outlet Datapoints <br />
+                  <b> Image Recognition AI</b> <br />
+                  <b> Secondary Data Mining</b> <br />
+                  <b> Analysis and Periodic Reports and publications.</b>
                 </p>
               </div>
             </div>
             <div class="col-lg-4">
               <div class="one">
                 <span>3</span>
-                <h2>Verification and Updates</h2>
+                <h2>Offering</h2>
                 <p>
-                  The first step in the easy 3-step software setup process is
-                  the installation phase. This phase is designed to be
-                  straightforward.
+                  Route planning Over a MAP <br />
+
+                  BIT planning and Assignment <br />
+
+                  Marking Resource Planning Survey and Analysis <br />
+
+                  Market Expansion Planning <br />
+
+                  <b>Sales Route optimisation </b><br />
+
+                  <b>Out Universe Optimisation</b> <br />
+
+                  <b>Product availability Audit</b>
                 </p>
               </div>
             </div>
@@ -240,6 +385,7 @@
         </div>
       </div>
     </section>
+    <!--work flow-->
     <!---->
     <section class="fourth" style="padding-top: 130px">
       <div class="container">
@@ -375,6 +521,7 @@
       </div>
     </section>
     <!---->
+    <!--prices-->
     <section style="padding-top: 130px">
       <div class="container">
         <div class="four">
@@ -386,84 +533,77 @@
             suit your needs.
           </h2>
         </div>
-        <div class="price">
-          <span>
-            <ul class="nav">
-              <li class="nav-item first"><button>Monthly</button></li>
-              <li class="nav-item second"><button>Yearly</button></li>
-            </ul>
-          </span>
-        </div>
+
         <div class="row">
-          <div class="col-lg-4">
+          <div class="col-lg-3">
             <div class="items">
-              <p>Free</p>
-              <h2>$0<span>/Monthly</span></h2>
-              <h5>Features</h5>
+              <p>Horeca</p>
               <ul class="nav">
-                <li class="d-flex"><i class="bx bx-check"></i>1 User</li>
-                <li class="d-flex"><i class="bx bx-check"></i>5GB Bandwidth</li>
-                <li class="d-flex">
-                  <i class="bx bx-check"></i>Whitelabelling
-                </li>
-                <li class="d-flex">
-                  <i class="bx bx-check"></i>Limited Support
-                </li>
+                <li class="d-flex"><i class="bx bx-check"></i>Bar</li>
+                <li class="d-flex"><i class="bx bx-check"></i>Garden</li>
+                <li class="d-flex"><i class="bx bx-check"></i>Café</li>
+                <li class="d-flex"><i class="bx bx-check"></i>Club</li>
+                <li class="d-flex"><i class="bx bx-check"></i>Restaurant</li>
+                <li class="d-flex"><i class="bx bx-check"></i>Lounge</li>
+                <li class="d-flex"><i class="bx bx-check"></i>Suite</li>
+                <li class="d-flex"><i class="bx bx-check"></i>Joint</li>
+                <li class="d-flex"><i class="bx bx-check"></i>Hotel</li>
               </ul>
-              <div>
-                <a href="">Get Started Now</a>
-              </div>
             </div>
           </div>
-          <div class="col-lg-4">
+
+          <div class="col-lg-3">
             <div class="items">
-              <p>Standard</p>
-              <h2>$29<span>/Monthly</span></h2>
-              <h5>Features</h5>
+              <p>Neighbourhood</p>
               <ul class="nav">
-                <li class="d-flex"><i class="bx bx-check"></i>10 User</li>
-                <li class="d-flex">
-                  <i class="bx bx-check"></i>25GB Bandwidth
-                </li>
-                <li class="d-flex">
-                  <i class="bx bx-check"></i>Whitelabelling
-                </li>
-                <li class="d-flex">
-                  <i class="bx bx-check"></i>Advanced Stats
-                </li>
+                <li class="d-flex"><i class="bx bx-check"></i>General store</li>
+                <li class="d-flex"><i class="bx bx-check"></i>Table -Top</li>
+                <li class="d-flex"><i class="bx bx-check"></i>supermarket</li>
+                <li class="d-flex"><i class="bx bx-check"></i>superstore</li>
+                <li class="d-flex"><i class="bx bx-check"></i>Kiosk</li>
+                <li class="d-flex"><i class="bx bx-check"></i>Liqour Store</li>
+                <li class="d-flex"><i class="bx bx-check"></i>Drug store</li>
+                <li class="d-flex"><i class="bx bx-check"></i>School</li>
+                <li class="d-flex"><i class="bx bx-check"></i>Hypermarket</li>
+                <li class="d-flex"><i class="bx bx-check"></i>Wine shop</li>
+                <li class="d-flex"><i class="bx bx-check"></i>mini-mart</li>
+                <li class="d-flex"><i class="bx bx-check"></i>grocery store</li>
+                <li class="d-flex"><i class="bx bx-check"></i>mall</li>
+                <li class="d-flex"><i class="bx bx-check"></i>Wine Store</li>
               </ul>
-              <div>
-                <a href="">Get Started Now</a>
-              </div>
             </div>
           </div>
-          <div class="col-lg-4">
-            <div class="items-active">
-              <p>Pro</p>
-              <h2>$99<span>/Monthly</span></h2>
-              <h5>Features</h5>
+
+          <div class="col-lg-3">
+            <div class="items">
+              <p>Specalist</p>
               <ul class="nav">
-                <li class="d-flex">
-                  <i class="bx bx-check"></i>Unlimited User
-                </li>
-                <li class="d-flex">
-                  <i class="bx bx-check"></i>Unlimited Bandwidth
-                </li>
-                <li class="d-flex">
-                  <i class="bx bx-check"></i>Whitelabelling
-                </li>
-                <li class="d-flex">
-                  <i class="bx bx-check"></i>24/7 Hours Support
-                </li>
+                <li class="d-flex"><i class="bx bx-check"></i>Chemist</li>
+                <li class="d-flex"><i class="bx bx-check"></i>Salon</li>
+                <li class="d-flex"><i class="bx bx-check"></i>Unisex</li>
+                <li class="d-flex"><i class="bx bx-check"></i>Beauty Store</li>
+                <li class="d-flex"><i class="bx bx-check"></i>Hospital</li>
+                <li class="d-flex"><i class="bx bx-check"></i>Cosmetic</li>
               </ul>
-              <div>
-                <a href="">Get Started Now</a>
-              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="items">
+              <p>Key Account</p>
+
+              <ul class="nav">
+                <li class="d-flex"><i class="bx bx-check"></i>Franchise</li>
+                <li class="d-flex"><i class="bx bx-check"></i>Depot</li>
+                <li class="d-flex"><i class="bx bx-check"></i>Investment</li>
+                <li class="d-flex"><i class="bx bx-check"></i>Ventures</li>
+                <li class="d-flex"><i class="bx bx-check"></i>Enterprise</li>
+              </ul>
             </div>
           </div>
         </div>
       </div>
     </section>
+    <!--prices-->
     <!---->
     <section style="padding: 130px 0">
       <div class="container">
@@ -559,7 +699,11 @@
             <div class="col-lg-4 col-md-12">
               <div class="one">
                 <div>
-                  <img style="margin-bottom: 20px" src="logo.png" alt="" />
+                  <img
+                    style="margin-bottom: 20px"
+                    src="tradeSensebalck-removebg-preview.png"
+                    alt=""
+                  />
                 </div>
                 <p>
                   A SaaS that specializes in providing a range of digital

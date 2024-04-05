@@ -3,13 +3,17 @@ body {
 }
 :root {
   --primary-color: rgb(29, 29, 31);
-  --secondary-color: rgb(213, 249, 103);
+  --secondary-color: rgb(75, 174, 234);
 }
 a {
   text-decoration: none;
 }
 .main {
   background-color: var(--primary-color);
+}
+.main img {
+  height: 60px;
+  width: 150px;
 }
 /* header start*/
 .header {
@@ -42,6 +46,10 @@ a {
 .header .hmenu {
   display: none;
 }
+.header .hmenu a {
+  color: black;
+  font-size: 32px;
+}
 
 /* list hover ends*/
 @media (min-width: 300px) and (max-width: 991.98px) {
@@ -52,7 +60,6 @@ a {
     display: block;
   }
   .header img {
-    margin-inline-end: auto;
     width: 100px;
   }
 }
@@ -85,6 +92,9 @@ a {
   border-radius: 90px;
 }
 @media (min-width: 300px) and (max-width: 991.98px) {
+  .ntrail {
+    display: none;
+  }
   .header .ntrail a {
     padding: 8px 20px;
   }
@@ -177,6 +187,7 @@ a {
 /*-----*/
 .two-body img {
   margin-top: -450px;
+  border-radius: 24px;
 }
 @media (min-width: 300px) and (max-width: 991.98px) {
   .two-body img {
@@ -206,13 +217,14 @@ a {
   border-bottom: 1px solid rgb(230, 230, 235);
 }
 .first .about h3 {
-  font-size: 56px;
+  font-size: 18px;
   font-weight: 600;
 }
-.first .about span {
-  display: block;
-  font-size: 20px;
-  font-weight: 500;
+.first .about .fabout {
+  background-color: rgb(242, 242, 240);
+  color: gray;
+  margin: 5px;
+  padding: 15px;
 }
 .first .image {
   padding-left: 100px;
@@ -230,7 +242,31 @@ a {
 }
 /*-----*/
 /*-----*/
+.logos {
+  overflow: hidden;
+  white-space: nowrap;
+}
+.logos-slide {
+  display: inline-block;
+  animation: slide 10s infinite linear;
+}
+.logos-slide:last-child {
+  animation-delay: 0s;
+}
+.logos-slide img {
+  margin: 0 30px;
+}
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
 
+/*-----*/
+/*-----*/
 .second .about {
   align-content: center;
 }
@@ -251,6 +287,7 @@ a {
   padding: 16px;
   border: 1px solid rgb(230, 230, 235);
   border-radius: 16px;
+  margin-bottom: 10px;
 }
 .second .about .zero h5 {
   font-size: 18px;
@@ -301,12 +338,12 @@ a {
   color: #fff;
 }
 .third h2 span {
-  color: rgb(213, 249, 103);
+  color: var(--secondary-color);
 }
 .third .one span {
   border: 5px solid rgb(97, 97, 99);
   border-radius: 50%;
-  color: rgb(213, 249, 103);
+  color: var(--secondary-color);
   background-color: rgb(124, 124, 130);
   padding: 25px 35px;
   font-size: 32px;
@@ -400,41 +437,8 @@ a {
   }
 }
 /*-----*/
-/*-----*/
-.price {
-  display: flex;
-  justify-content: center;
-}
-.price span {
-  display: inline-block;
-  text-align: center;
-  background-color: rgb(249, 249, 250);
-  border-radius: 30px;
-  margin-bottom: 60px;
-}
-.price ul {
-  padding: 10px;
-}
-.price .first button {
-  padding: 16px 24px;
-  background-color: var(--secondary-color);
-  border: 0;
-  border-radius: 30px;
-  font-size: 18px;
-  font-weight: 500;
-  color: var(--primary-color);
-  line-height: 18px;
-}
-.price .second button {
-  padding: 16px 24px;
-  background-color: rgb(249, 249, 250);
-  border: 0;
-  border-radius: 30px;
-  font-size: 18px;
-  font-weight: 500;
-  color: var(--primary-color);
-  line-height: 18px;
-}
+/*--prices--*/
+
 .items {
   padding: 60px 50px;
   background-color: rgb(242, 242, 240);
@@ -452,32 +456,9 @@ a {
   color: rgb(68, 68, 77);
   font-size: 18px;
   font-weight: 500;
+  text-align: center;
 }
-.items h2 {
-  font-size: 48px;
-  font-weight: 600;
-  margin-bottom: 40px;
-  color: var(--primary-color);
-  letter-spacing: -2px;
-}
-.items:hover h2 {
-  color: var(--secondary-color);
-}
-.items h2 span {
-  letter-spacing: 0.7px;
-  font-size: 16px;
-  font-weight: 600;
-  color: var(--primary-color);
-}
-.items:hover h2 span {
-  color: var(--secondary-color);
-}
-.items h5 {
-  margin-bottom: 30px;
-  font-size: 18px;
-  font-weight: 500;
-  color: var(--primary-color);
-}
+
 .items ul {
   flex-direction: column;
   column-gap: 20px;
@@ -499,81 +480,12 @@ a {
 .items:hover ul li i {
   color: var(--secondary-color);
 }
-.items a {
-  padding: 18px 70px;
-  background-color: var(--primary-color);
-  border-radius: 50px;
-  color: #fff;
-  font-size: 18px;
-  font-weight: 500;
-}
-.items:hover a {
-  background-color: var(--secondary-color);
-  color: var(--primary-color);
-}
-.items-active {
-  padding: 60px 50px;
-  background-color: var(--primary-color);
-  border-radius: 16px;
-}
-.items-active p {
-  margin-bottom: 15px;
-  color: #fff;
-  font-size: 18px;
-  font-weight: 500;
-}
-.items-active h2 {
-  font-size: 48px;
-  font-weight: 600;
-  margin-bottom: 40px;
-  color: var(--secondary-color);
-  letter-spacing: -2px;
-}
-.items-active h2 span {
-  letter-spacing: 0.7px;
-  font-size: 16px;
-  font-weight: 600;
-  color: var(--secondary-color);
-}
-.items-active h5 {
-  margin-bottom: 30px;
-  font-size: 18px;
-  font-weight: 500;
-  color: #fff;
-}
-.items-active ul {
-  flex-direction: column;
-  column-gap: 20px;
-  row-gap: 20px;
-  margin-bottom: 40px;
-}
-.items-active ul li {
-  column-gap: 15px;
-  font-size: 18px;
-  font-weight: 500;
-  row-gap: 15px;
-  color: #fff;
-}
-.items-active ul li i {
-  font-size: 18px;
-  font-weight: 400;
-  color: var(--secondary-color);
-}
-.items-active a {
-  padding: 18px 70px;
-  background-color: var(--secondary-color);
-  border-radius: 50px;
-  color: var(--primary-color);
-  font-size: 18px;
-  font-weight: 500;
-}
+
 @media (min-width: 992px) and (max-width: 1400px) {
   .items a {
     padding: 18px 10%;
   }
-  .items-active a {
-    padding: 18px 10%;
-  }
+
   @media (min-width: 992px) and (max-width: 1200px) {
     .items {
       padding-bottom: 90px;
@@ -584,21 +496,13 @@ a {
   .items {
     margin: 10px 15%;
   }
-  .items-active {
-    margin: 10px 15%;
-  }
+
   .items a {
-    padding: 18px 5%;
-  }
-  .items-active a {
     padding: 18px 5%;
   }
 }
 @media (min-width: 300px) and (max-width: 800px) {
   .items {
-    margin: 10px 7%;
-  }
-  .items-active {
     margin: 10px 7%;
   }
 }
@@ -739,6 +643,10 @@ a {
   margin-right: 60px;
   background-color: rgb(242, 242, 240);
   border-radius: 24px;
+}
+.footer .one img {
+  height: 60px;
+  width: 150px;
 }
 .footer .one p {
   margin-bottom: 24px;

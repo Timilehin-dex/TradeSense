@@ -1,0 +1,24 @@
+.menu-list {
+  padding: 50px;
+}
+.menu-list ul {
+  list-style: none;
+  padding: 0;
+}
+.menu-list ul li {
+  padding: 10px;
+}
+.menu-list ul li a {
+  color: black;
+}
+.mblog {
+  position: relative;
+}
+.mblog .mdropdown {
+  position: absolute;
+  display: none;
+  padding: 10px;
+}
+.mblog:hover .mdropdown {
+  display: block;
+}
