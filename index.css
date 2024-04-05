@@ -340,6 +340,34 @@ a {
     margin-bottom: 15px;
   }
 }
+.middle .icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.middle .icons h3 span {
+  color: var(--secondary-color);
+  font-size: 16px;
+}
+.middle .one i {
+  font-size: 80px;
+  color: var(--secondary-color);
+}
+.middle .icons .one {
+  border: 1px solid var(--primary-color);
+  border-radius: 24px;
+  margin-top: 10px;
+}
+.middle .image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.middle .image img {
+  height: 70%;
+}
 /*-----*/
 /*-----*/
 .third {
