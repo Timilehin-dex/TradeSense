@@ -8,9 +8,6 @@ body {
 a {
   text-decoration: none;
 }
-.main {
-  background-color: var(--primary-color);
-}
 .main img {
   height: 60px;
   width: 150px;
@@ -101,7 +98,12 @@ a {
 }
 /* header end*/
 .thepadding {
-  padding: 150px 0 130px 0;
+  padding: 150px 0 250px 0;
+  position: relative;
+}
+.thepadding video {
+  margin-top: -150px;
+  position: absolute;
 }
 @media (min-width: 300px) and (max-width: 991.98px) {
   .thepadding {
@@ -139,7 +141,7 @@ a {
   padding: 0 200px;
   margin-bottom: 40px;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 600;
   line-height: 32px;
 }
 
@@ -170,6 +172,9 @@ a {
   }
 }
 /*-----*/
+.first {
+  padding: 130px 0;
+}
 .first .about {
   align-content: center;
 }
@@ -177,6 +182,13 @@ a {
   font-size: 45px;
   font-weight: 600;
   margin-bottom: 15px;
+  color: var(--primary-color);
+}
+.first .about h2::after {
+  content: "________";
+  font-size: 12px;
+  display: block;
+  font-weight: 600;
   color: var(--primary-color);
 }
 .first .about p {
@@ -192,9 +204,17 @@ a {
 }
 .first .about .fabout {
   background-color: rgb(242, 242, 240);
+  border-radius: 16px;
   color: gray;
   margin: 5px;
   padding: 15px;
+  width: 100%;
+  transition: 0.5s ease;
+}
+.first .about .fabout:hover {
+  transform: scale(1.1);
+  background-color: rgb(242, 242, 240);
+  color: black;
 }
 .first .image {
   padding-left: 100px;
@@ -255,8 +275,9 @@ a {
   border-radius: 24px;
 }
 .second .image img {
-  width: 49.5%;
-  height: 600px;
+  border-radius: 24px;
+  /* width: 49.5%;
+  height: 600px; */
 }
 .second .image .a {
   border-top-left-radius: 24px;
@@ -271,6 +292,15 @@ a {
   border: 1px solid rgb(230, 230, 235);
   border-radius: 16px;
   margin-bottom: 10px;
+  transition: 0.5s;
+  width: 100%;
+}
+.second .about .zero:hover {
+  background-color: var(--primary-color);
+  transform: scale(1.1);
+}
+.second .about .zero:hover * {
+  color: #fff;
 }
 .second .about .zero h5 {
   font-size: 18px;
@@ -313,19 +343,35 @@ a {
 .middle {
   background-color: var(--primary-color);
 }
+.middle .head {
+  padding-top: 70px;
+  text-align: center;
+}
+.middle .head h4 {
+  color: #fff;
+  font-size: 37px;
+  font-weight: 600;
+}
+.middle .head h4::after {
+  content: "________";
+  display: block;
+  font-size: 14px;
+  font-weight: 900;
+  color: #fff;
+}
 .middle .icons {
   align-content: center;
 }
 .middle .icons h3 {
   color: var(--secondary-color);
-  font-size: 20px;
+  font-size: 28px;
 }
 .middle .icons h3 span {
   color: var(--secondary-color);
   font-size: 16px;
 }
 .middle .one i {
-  font-size: 80px;
+  font-size: 45px;
   color: var(--secondary-color);
   transition: 0.3s ease-in;
 }
@@ -339,13 +385,16 @@ a {
 }
 
 .middle .icons .one {
-  border: 1px solid var(--secondary-color);
   background-color: rgb(242, 242, 240);
   border-radius: 24px;
+  align-content: center;
+  height: 150px;
+  width: 150px;
   margin-top: 10px;
-  transition: 0.3s;
+  transition: 0.3s ease;
 }
 .middle .icons .one:hover {
+  transform: scale(1.1);
   border: 1px solid var(--primary-color);
   background-color: rgb(165, 165, 165);
 }
@@ -354,9 +403,23 @@ a {
   justify-content: center;
   align-items: center;
   height: 100%;
+  transition: 0.5s ease;
+}
+.middle .image:hover {
+  transform: scale(1.1);
 }
 .middle .image img {
   height: 70%;
+  animation: map 3s linear infinite;
+}
+@keyframes map {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
 }
 /*-----*/
 /*-----*/
@@ -413,12 +476,19 @@ a {
   padding: 10px 25px;
   color: #fff;
 }
+
 .four h2 {
   font-size: 37px;
   font-weight: 600;
   color: var(--primary-color);
 }
-
+.four h2::after {
+  content: "________";
+  display: block;
+  color: var(--secondary-color);
+  font-size: 14px;
+  font-weight: 900;
+}
 /*-----*/
 /*--prices--*/
 .items {
@@ -558,7 +628,7 @@ a {
 /*-----*/
 /*-----*/
 .footer {
-  padding-top: 50px;
+  padding-top: 10px;
 }
 
 .footer .one img {

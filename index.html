@@ -13,6 +13,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="index.css " />
     <link rel="stylesheet" href="menu.css" />
     <title>Optic</title>
@@ -20,7 +21,10 @@
   <body>
     <div class="main">
       <!--header start-->
-      <div class="header fixed-top" style="background-color: rgb(29, 29, 31)">
+      <div
+        class="header fixed-top"
+        style="background-color: rgb(29, 29, 31, 0)"
+      >
         <div class="container">
           <div class="d-flex justify-content-between align-items-center">
             <a href="index.html">
@@ -110,7 +114,8 @@
       <!---->
       <!--one body-->
       <div class="thepadding">
-        <div class="container">
+        <video autoplay loop muted src="video.mp4" width="100%"></video>
+        <div class="container" style="position: relative">
           <div class="one-body">
             <h2>
               Democratising access to <br />Traditional <span>Trade Data</span>
@@ -133,15 +138,15 @@
         <div class="container">
           <div style="text-align: center">
             <img class="img-fluid" src="bodyimage.jpeg" alt="" />
-            <div style="padding-top: 110px">
+             <div style="padding-top: 110px">
               <div>
                 <h5 style="margin-bottom: 50px">TRUSTED BY INDUSTRY LEADERS</h5>
               </div>
-            </div> -->
+            </div>
           </div>
         </div>
       </section>
-      <!-- <div class="logos">
+       <div class="logos">
         <div class="logos-slide">
           <img src="logo-black-1.png" alt="" />
           <img src="logo-black-2.png" alt="" />
@@ -159,18 +164,22 @@
           <img src="logo-black-2.png" alt="" />
           <img src="logo-black-3.png" alt="" />
         </div>
-      </div> -->
-    </section>
+      </div>
+    </section>-->
 
     <!--prices-->
-    <section style="padding: 130px 0">
+    <section style="padding: 130px 0" data-aos="fade-up">
       <div class="container">
-        <div class="four">
+        <div class="four" style="align-items: center">
           <h2>What We Cover</h2>
         </div>
 
         <div class="row">
-          <div class="col-lg-3" style="display: flex; align-items: stretch">
+          <div
+            class="col-lg-3"
+            style="display: flex; align-items: stretch"
+            data-aos="fade-up"
+          >
             <div class="items">
               <p>Horeca</p>
               <ul class="nav flex-column">
@@ -187,7 +196,11 @@
             </div>
           </div>
 
-          <div class="col-lg-3" style="display: flex; align-items: stretch">
+          <div
+            class="col-lg-3"
+            style="display: flex; align-items: stretch"
+            data-aos="fade-down"
+          >
             <div class="items">
               <p>Neighbourhood</p>
               <ul class="nav flex-column">
@@ -209,7 +222,11 @@
             </div>
           </div>
 
-          <div class="col-lg-3" style="display: flex; align-items: stretch">
+          <div
+            class="col-lg-3"
+            style="display: flex; align-items: stretch"
+            data-aos="fade-up"
+          >
             <div class="items">
               <p>Specalist</p>
               <ul class="nav flex-column">
@@ -223,7 +240,11 @@
             </div>
           </div>
 
-          <div class="col-lg-3" style="display: flex; align-items: stretch">
+          <div
+            class="col-lg-3"
+            style="display: flex; align-items: stretch"
+            data-aos="fade-down"
+          >
             <div class="items">
               <p>Key Account</p>
 
@@ -243,37 +264,40 @@
     <!---->
     <section class="middle">
       <div class="container">
+        <div class="head">
+          <h4>Markets & Category</h4>
+        </div>
         <div class="row">
-          <div class="col-lg-6 icons">
+          <div class="col-lg-6 icons" data-aos="fade-down">
             <div class="text-center">
               <div class="row">
                 <h3>+1.3M <br /><span>OUTLET UNIVERSE</span></h3>
 
-                <div class="col-lg-6">
+                <div class="col-lg-6 d-flex justify-content-center">
                   <div class="one">
                     <i class="bx bxs-bowl-hot"></i>
                     <h4>Food and Bev</h4>
                   </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6 d-flex justify-content-center">
                   <div class="one">
                     <i class="bx bx-home"></i>
                     <h4>Home Care</h4>
                   </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-12 d-flex justify-content-center">
                   <div class="one">
                     <i class="bx bx-plus-medical"></i>
                     <h4>OTC Pharma</h4>
                   </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6 d-flex justify-content-center">
                   <div class="one">
                     <i class="bx bx-child"></i>
                     <h4>Personal Care</h4>
                   </div>
                 </div>
-                <div class="col">
+                <div class="col-lg-6 d-flex justify-content-center">
                   <div class="one">
                     <i class="bx bxs-baby-carriage"></i>
                     <h4>Consumer Durables</h4>
@@ -282,7 +306,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-6">
+          <div class="col-lg-6" data-aos="fade-left">
             <div class="image">
               <img class="img-fluid" src="map.png" alt="" />
             </div>
@@ -293,13 +317,14 @@
     <!---->
 
     <!---->
-    <section class="second" style="padding: 130px 0">
+    <section class="second" style="padding: 130px 0" data-aos="fade-left">
       <div class="container">
         <div class="row">
-          <div class="col-lg-5">
+          <div class="col-lg-5" style="align-content: center">
             <div class="image">
-              <img class="img-fluid a" src="phone1.jpeg" alt="" />
-              <img class="img-fluid b" src="phone2.jpeg" alt="" />
+              <img class="img-fluid" src="omo.jpeg" alt="" />
+              <!-- <img class="img-fluid a" src="phone1.jpeg" alt="" />
+              <img class="img-fluid b" src="phone2.jpeg" alt="" /> -->
             </div>
           </div>
           <div class="col-lg-7 about">
@@ -310,7 +335,10 @@
                 MAP.
               </p>
               <div class="row">
-                <div class="col-lg-4">
+                <div
+                  class="col-lg-4"
+                  style="display: flex; align-items: stretch"
+                >
                   <div class="zero">
                     <i class="bx bx-check"></i>
                     <h5>Polygon Creations</h5>
@@ -320,28 +348,40 @@
                     </p>
                   </div>
                 </div>
-                <div class="col-lg-4">
+                <div
+                  class="col-lg-4"
+                  style="display: flex; align-items: stretch"
+                >
                   <div class="zero">
                     <i class="bx bx-check"></i>
                     <h5>Filter</h5>
                     <p>Filter by Outlet Channel, Category, Size and more.</p>
                   </div>
                 </div>
-                <div class="col-lg-4">
+                <div
+                  class="col-lg-4"
+                  style="display: flex; align-items: stretch"
+                >
                   <div class="zero">
                     <i class="bx bx-check"></i>
                     <h5>Filter</h5>
                     <p>Filter by Outlet Channel, Category, Size and more.</p>
                   </div>
                 </div>
-                <div class="col-lg-6">
+                <div
+                  class="col-lg-6"
+                  style="display: flex; align-items: stretch"
+                >
                   <div class="zero">
                     <i class="bx bx-check"></i>
                     <h5>Filter</h5>
                     <p>Filter by Outlet Channel, Category, Size and more.</p>
                   </div>
                 </div>
-                <div class="col-lg-6">
+                <div
+                  class="col-lg-6"
+                  style="display: flex; align-items: stretch"
+                >
                   <div class="zero">
                     <i class="bx bx-check"></i>
                     <h5>Filter</h5>
@@ -440,10 +480,10 @@
     <!--work flow-->
 
     <!--About Us-->
-    <section class="first" id="aboutus" style="padding: 130px 0">
+    <section class="first" id="aboutus">
       <div class="container">
         <div class="row">
-          <div class="col-lg-6 about">
+          <div class="col-lg-6 about" data-aos="fade-right">
             <h2>About Us</h2>
             <p>
               TradeSense® is a route to market automation and trade intelligence
@@ -454,36 +494,60 @@
             </p>
             <div>
               <div class="row">
-                <div class="col-lg-3">
+                <div
+                  class="col-lg-3"
+                  style="display: flex; align-items: stretch"
+                >
                   <div class="fabout"><h3>Market Entry</h3></div>
                 </div>
-                <div class="col-lg-3">
+                <div
+                  class="col-lg-3"
+                  style="display: flex; align-items: stretch"
+                >
                   <div class="fabout"><h3>Market Expansion</h3></div>
                 </div>
-                <div class="col-lg-3">
+                <div
+                  class="col-lg-3"
+                  style="display: flex; align-items: stretch"
+                >
                   <div class="fabout">
                     <h3>Route to Market Optimisation</h3>
                   </div>
                 </div>
-                <div class="col-lg-3">
+                <div
+                  class="col-lg-3"
+                  style="display: flex; align-items: stretch"
+                >
                   <div class="fabout"><h3>Outlet Enumeration</h3></div>
                 </div>
-                <div class="col-lg-3">
+                <div
+                  class="col-lg-3"
+                  style="display: flex; align-items: stretch"
+                >
                   <div class="fabout"><h3>Outlet Validation</h3></div>
                 </div>
-                <div class="col-lg-3">
+                <div
+                  class="col-lg-3"
+                  style="display: flex; align-items: stretch"
+                >
                   <div class="fabout"><h3>Distribution Advisory</h3></div>
                 </div>
-                <div class="col-lg-3">
+                <div
+                  class="col-lg-3"
+                  style="display: flex; align-items: stretch"
+                >
                   <div class="fabout"><h3>Competition Analysis</h3></div>
                 </div>
-                <div class="col-lg-3">
+                <div
+                  class="col-lg-3"
+                  style="display: flex; align-items: stretch"
+                >
                   <div class="fabout"><h3>Sales Automation</h3></div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-lg-6 image">
+          <div class="col-lg-6 image" data-aos="fade-left">
             <img class="img-fluid" src="about.png" alt="" />
           </div>
         </div>
@@ -531,19 +595,12 @@
         <div class="container">
           <div class="d-flex justify-content-between align-items-center">
             <div class="one">
-              <div style="display: inline">
+              <div>
                 <img
                   style="margin-bottom: 20px"
                   src="tradeSensebalck-removebg-preview.png"
                   alt=""
                 />
-              </div>
-
-              <div style="display: inline">
-                <i class="bx bxl-facebook"></i>
-                <i class="bx bxl-instagram"></i>
-                <i class="bx bxl-twitter"></i>
-                <i class="bx bxl-pinterest-alt"></i>
               </div>
             </div>
 
@@ -553,6 +610,12 @@
                 <li><a href="#aboutus">About Us</a></li>
                 <li><a href="contact.html">Contact</a></li>
               </ul>
+            </div>
+            <div class="one">
+              <i class="bx bxl-facebook"></i>
+              <i class="bx bxl-instagram"></i>
+              <i class="bx bxl-twitter"></i>
+              <i class="bx bxl-pinterest-alt"></i>
             </div>
           </div>
         </div>
@@ -564,5 +627,9 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({ offset: 400, duration: 1000 });
+    </script>
   </body>
 </html>
