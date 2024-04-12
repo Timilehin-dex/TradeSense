@@ -101,7 +101,7 @@ a {
 }
 /* header end*/
 .thepadding {
-  padding: 150px 0 500px 0;
+  padding: 150px 0 130px 0;
 }
 @media (min-width: 300px) and (max-width: 991.98px) {
   .thepadding {
