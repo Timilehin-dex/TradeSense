@@ -19,27 +19,25 @@
     <title>Optic</title>
   </head>
   <body>
-    <div class="main">
-      <!--header start-->
-      <div
-        class="header fixed-top"
-        style="background-color: rgb(29, 29, 31, 0)"
-      >
-        <div class="container">
-          <div class="d-flex justify-content-between align-items-center">
-            <a href="index.html">
-              <img src="tradesensewhite-removebg-preview.png" alt=""
-            /></a>
-            <div>
-              <ul class="nav">
-                <li class="nav-item nlist">
-                  <a class="nav-link nlink" href="index.html">Home </a>
-                </li>
-                <li class="nav-item nlist">
-                  <a class="nav-link nlink" href="#aboutus">About Us</a>
-                </li>
+    <!--header start-->
+    <header>
+      <div class="header-scrolled">
+        <div class="header fixed-top" id="head">
+          <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+              <a href="index.html">
+                <img src="tradesensewhite-removebg-preview.png" alt=""
+              /></a>
+              <div>
+                <ul class="nav">
+                  <li class="nav-item nlist">
+                    <a class="nav-link nlink" href="index.html">Home </a>
+                  </li>
+                  <li class="nav-item nlist">
+                    <a class="nav-link nlink" href="#aboutus">About Us</a>
+                  </li>
 
-                <!-- <li class="nav-item dropdown nlist">
+                  <!-- <li class="nav-item dropdown nlist">
                   <a
                     class="nav-link dropdown-toggle nlink"
                     data-bs-toggle="dropdown"
@@ -59,30 +57,31 @@
                     </li>
                   </ul>
                 </li> -->
-                <li class="nav-item nlist">
-                  <a
-                    class="nav-link nlink"
-                    style="margin-right: 0"
-                    href="contact.html"
-                  >
-                    Contact</a
-                  >
-                </li>
-              </ul>
-            </div>
-            <div class="ntrail">
-              <a href="">Request A Demo</a>
-            </div>
-            <div class="hmenu">
-              <a href="" data-bs-toggle="modal" data-bs-target="#reg-modal"
-                ><i class="bx bx-menu"></i
-              ></a>
+                  <li class="nav-item nlist">
+                    <a
+                      class="nav-link nlink"
+                      style="margin-right: 0"
+                      href="contact.html"
+                    >
+                      Contact</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="ntrail">
+                <a href="">Request A Demo</a>
+              </div>
+              <div class="hmenu">
+                <a href="" data-bs-toggle="modal" data-bs-target="#reg-modal"
+                  ><i class="bx bx-menu"></i
+                ></a>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <!--header ends-->
-      <!-- <div
+    </header>
+    <!-- <div
         class="modal fade"
         id="reg-modal"
         tabindex="-1"
@@ -111,27 +110,27 @@
           </div>
         </div>
       </div> -->
-      <!---->
+    <!---->
+    <!--header ends-->
+    <section class="main">
+      <video autoplay loop muted src="video.mp4" width="100%"></video>
       <!--one body-->
-      <div class="thepadding">
-        <video autoplay loop muted src="video.mp4" width="100%"></video>
-        <div class="container" style="position: relative">
-          <div class="one-body">
-            <h2>
-              Democratising access to <br />Traditional <span>Trade Data</span>
-            </h2>
-            <p>
-              We specialize in delivering comprehensive trade intelligence
-              solutions, meticulously curating and democratizing market and
-              trade data to empower brands. Our mission is to enhance your
-              planning process, reduce expenses, boost productivity, and enable
-              well-informed go to market strategies.
-            </p>
-          </div>
+      <div class="one-body">
+        <div class="container">
+          <h2>
+            Democratising access to <br />Traditional <span>Trade Data</span>
+          </h2>
+          <p>
+            We specialize in delivering comprehensive trade intelligence
+            solutions, meticulously curating and democratizing market and trade
+            data to empower brands. Our mission is to enhance your planning
+            process, reduce expenses, boost productivity, and enable
+            well-informed go to market strategies.
+          </p>
         </div>
       </div>
       <!--one body ends-->
-    </div>
+    </section>
     <!---->
     <!-- <section>
       <section class="two-body">
@@ -168,7 +167,7 @@
     </section>-->
 
     <!--prices-->
-    <section style="padding: 130px 0" data-aos="fade-up">
+    <section style="padding: 70px 0 130px 0" data-aos="fade-up">
       <div class="container">
         <div class="four" style="align-items: center">
           <h2>What We Cover</h2>
@@ -176,9 +175,8 @@
 
         <div class="row">
           <div
-            class="col-lg-3"
+            class="col-lg-3 col-md-6"
             style="display: flex; align-items: stretch"
-            data-aos="fade-up"
           >
             <div class="items">
               <p>Horeca</p>
@@ -197,9 +195,8 @@
           </div>
 
           <div
-            class="col-lg-3"
+            class="col-lg-3 col-md-6"
             style="display: flex; align-items: stretch"
-            data-aos="fade-down"
           >
             <div class="items">
               <p>Neighbourhood</p>
@@ -223,9 +220,8 @@
           </div>
 
           <div
-            class="col-lg-3"
+            class="col-lg-3 col-md-6"
             style="display: flex; align-items: stretch"
-            data-aos="fade-up"
           >
             <div class="items">
               <p>Specalist</p>
@@ -241,9 +237,8 @@
           </div>
 
           <div
-            class="col-lg-3"
+            class="col-lg-3 col-md-6"
             style="display: flex; align-items: stretch"
-            data-aos="fade-down"
           >
             <div class="items">
               <p>Key Account</p>
@@ -273,13 +268,13 @@
               <div class="row">
                 <h3>+1.3M <br /><span>OUTLET UNIVERSE</span></h3>
 
-                <div class="col-lg-6 d-flex justify-content-center">
+                <div class="col-lg-6 col-md-6 d-flex justify-content-center">
                   <div class="one">
                     <i class="bx bxs-bowl-hot"></i>
                     <h4>Food and Bev</h4>
                   </div>
                 </div>
-                <div class="col-lg-6 d-flex justify-content-center">
+                <div class="col-lg-6 col-md-6 d-flex justify-content-center">
                   <div class="one">
                     <i class="bx bx-home"></i>
                     <h4>Home Care</h4>
@@ -291,13 +286,13 @@
                     <h4>OTC Pharma</h4>
                   </div>
                 </div>
-                <div class="col-lg-6 d-flex justify-content-center">
+                <div class="col-lg-6 col-md-6 d-flex justify-content-center">
                   <div class="one">
                     <i class="bx bx-child"></i>
                     <h4>Personal Care</h4>
                   </div>
                 </div>
-                <div class="col-lg-6 d-flex justify-content-center">
+                <div class="col-lg-6 col-md-6 d-flex justify-content-center">
                   <div class="one">
                     <i class="bx bxs-baby-carriage"></i>
                     <h4>Consumer Durables</h4>
@@ -306,7 +301,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-6" data-aos="fade-left">
+          <div class="col-lg-6" data-aos="fade-down">
             <div class="image">
               <img class="img-fluid" src="map.png" alt="" />
             </div>
@@ -317,7 +312,7 @@
     <!---->
 
     <!---->
-    <section class="second" style="padding: 130px 0" data-aos="fade-left">
+    <section class="second" style="padding: 130px 0" data-aos="fade-up">
       <div class="container">
         <div class="row">
           <div class="col-lg-5" style="align-content: center">
@@ -336,7 +331,7 @@
               </p>
               <div class="row">
                 <div
-                  class="col-lg-4"
+                  class="col-lg-4 col-md-6"
                   style="display: flex; align-items: stretch"
                 >
                   <div class="zero">
@@ -349,7 +344,7 @@
                   </div>
                 </div>
                 <div
-                  class="col-lg-4"
+                  class="col-lg-4 col-md-6"
                   style="display: flex; align-items: stretch"
                 >
                   <div class="zero">
@@ -359,7 +354,7 @@
                   </div>
                 </div>
                 <div
-                  class="col-lg-4"
+                  class="col-lg-4 col-md-6"
                   style="display: flex; align-items: stretch"
                 >
                   <div class="zero">
@@ -369,7 +364,7 @@
                   </div>
                 </div>
                 <div
-                  class="col-lg-6"
+                  class="col-lg-6 col-md-6"
                   style="display: flex; align-items: stretch"
                 >
                   <div class="zero">
@@ -483,7 +478,7 @@
     <section class="first" id="aboutus">
       <div class="container">
         <div class="row">
-          <div class="col-lg-6 about" data-aos="fade-right">
+          <div class="col-lg-6 about" data-aos="fade-up">
             <h2>About Us</h2>
             <p>
               TradeSense® is a route to market automation and trade intelligence
@@ -495,19 +490,19 @@
             <div>
               <div class="row">
                 <div
-                  class="col-lg-3"
+                  class="col-lg-3 lo"
                   style="display: flex; align-items: stretch"
                 >
                   <div class="fabout"><h3>Market Entry</h3></div>
                 </div>
                 <div
-                  class="col-lg-3"
+                  class="col-lg-3 lo"
                   style="display: flex; align-items: stretch"
                 >
                   <div class="fabout"><h3>Market Expansion</h3></div>
                 </div>
                 <div
-                  class="col-lg-3"
+                  class="col-lg-3 lo"
                   style="display: flex; align-items: stretch"
                 >
                   <div class="fabout">
@@ -515,31 +510,31 @@
                   </div>
                 </div>
                 <div
-                  class="col-lg-3"
+                  class="col-lg-3 lo"
                   style="display: flex; align-items: stretch"
                 >
                   <div class="fabout"><h3>Outlet Enumeration</h3></div>
                 </div>
                 <div
-                  class="col-lg-3"
+                  class="col-lg-3 lo"
                   style="display: flex; align-items: stretch"
                 >
                   <div class="fabout"><h3>Outlet Validation</h3></div>
                 </div>
                 <div
-                  class="col-lg-3"
+                  class="col-lg-3 lo"
                   style="display: flex; align-items: stretch"
                 >
                   <div class="fabout"><h3>Distribution Advisory</h3></div>
                 </div>
                 <div
-                  class="col-lg-3"
+                  class="col-lg-3 lo"
                   style="display: flex; align-items: stretch"
                 >
                   <div class="fabout"><h3>Competition Analysis</h3></div>
                 </div>
                 <div
-                  class="col-lg-3"
+                  class="col-lg-3 lo"
                   style="display: flex; align-items: stretch"
                 >
                   <div class="fabout"><h3>Sales Automation</h3></div>
@@ -547,7 +542,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-6 image" data-aos="fade-left">
+          <div class="col-lg-6 image" data-aos="fade-down">
             <img class="img-fluid" src="about.png" alt="" />
           </div>
         </div>
@@ -622,6 +617,7 @@
       </div>
     </footer>
     <!---->
+    <script src="index.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
