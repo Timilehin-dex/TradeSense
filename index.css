@@ -49,7 +49,7 @@ a {
   padding: 8px;
 }
 /* list hover start*/
-.header .nlist {
+/* .header .nlist {
   position: relative;
   display: inline-block;
   padding-right: 10px;
@@ -66,7 +66,7 @@ a {
 }
 .header .nlist:hover .nlistdropdown {
   display: block;
-}
+} */
 .header .hmenu {
   display: none;
 }
@@ -118,9 +118,6 @@ a {
 @media (min-width: 300px) and (max-width: 991.98px) {
   .ntrail {
     display: none;
-  }
-  .header .ntrail a {
-    padding: 8px 20px;
   }
 }
 /* header end*/
@@ -564,17 +561,24 @@ a {
   color: black;
 }
 .first .image {
-  padding-left: 100px;
-  padding-right: 0;
+  align-content: center;
 }
+
 @media (min-width: 300px) and (max-width: 991.98px) {
-  .first .image {
-    align-items: center;
-    text-align: center;
+  .first .about h2 {
+    font-size: 40px;
   }
   .first .image {
     margin-top: 15px;
-    padding: 0;
+    text-align: center;
+  }
+  .first {
+    padding: 100px 0;
+  }
+}
+@media (min-width: 300px) and (max-width: 575.98px) {
+  .first {
+    padding: 50px 0;
   }
 }
 /*-----*/
@@ -602,12 +606,11 @@ a {
   }
 } */
 /*-----*/
-
 /*-----*/
-
-/*-----*/
-
-/*-----*/
+.fifth {
+  background-color: var(--primary-color);
+  padding-top: 130px;
+}
 .last {
   padding-left: 60px;
 }
@@ -631,22 +634,25 @@ a {
   display: flex;
   column-gap: 30px;
 }
+.last .image a {
+  transition: 0.5 ease;
+}
+.last .image a:hover {
+  transform: scale(1.1);
+}
 .phone {
   position: relative;
   animation: phone 5s linear infinite;
 }
 @keyframes phone {
   0% {
-    left: 0px;
-    right: 0px;
+    transform: translateX(0);
   }
   50% {
-    left: 30px;
-    right: 30px;
+    transform: translateX(-10px);
   }
   100% {
-    left: 0px;
-    right: 0px;
+    transform: translateX(0);
   }
 }
 @media (min-width: 300px) and (max-width: 992px) {
@@ -667,9 +673,17 @@ a {
     text-align: center;
   }
 }
-@media (min-width: 300px) and (max-width: 660px) {
-  .phone {
-    animation: 0;
+@media (min-width: 300px) and (max-width: 571.98px) {
+  @keyframes phone {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(5px);
+    }
+    100% {
+      transform: translateX(0);
+    }
   }
 }
 /*-----*/
@@ -677,7 +691,6 @@ a {
 .footer {
   padding-top: 10px;
 }
-
 .footer .one img {
   height: 45px;
   width: 100px;

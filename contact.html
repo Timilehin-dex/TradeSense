@@ -13,13 +13,14 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="contact.css" />
     <title>TradeSense-Contact Us</title>
   </head>
   <body>
     <div class="header fixed-top" style="background-color: #fff">
       <div class="container d-flex justify-content-between align-items-center">
-        <div class="main">
+        <div>
           <a href="index.html"
             ><img src="tradeSensebalck-removebg-preview.png" alt=""
           /></a>
@@ -30,7 +31,7 @@
               <a class="nav-link nlink" href="index.html">Home </a>
             </li>
             <li class="nav-item nlist">
-              <a class="nav-link nlink" href="#aboutus">About Us</a>
+              <a class="nav-link nlink" href="index.html#aboutus">About Us</a>
             </li>
 
             <!-- <li class="nav-item dropdown nlist">
@@ -73,21 +74,20 @@
       </div>
     </div>
     <!---->
+    <!---->
     <section class="first">
-      <div style="padding: 180px 0 90px 0">
-        <div class="container">
-          <div class="one">
-            <div style="margin-bottom: 20px">
-              <span class="test">GET IN TOUCH</span>
-            </div>
-            <h2>Connect with us and join <br />the conversation!</h2>
-            <p>
-              Your satisfaction is of paramount importance to us, and your
-              feedback, questions, or concerns are always welcome. We are
-              committed to providing you with the support you need, whether you
-              have.
-            </p>
+      <div class="container">
+        <div class="one">
+          <div style="margin-bottom: 20px">
+            <span class="test">GET IN TOUCH</span>
           </div>
+          <h2>Connect with us and join <br />the conversation!</h2>
+          <p>
+            Your satisfaction is of paramount importance to us, and your
+            feedback, questions, or concerns are always welcome. We are
+            committed to providing you with the support you need, whether you
+            have.
+          </p>
         </div>
       </div>
     </section>
@@ -95,9 +95,9 @@
     <!---->
     <section class="second">
       <div class="container">
-        <div class="contact">
+        <div class="contact" data-aos="fade-left">
           <div class="row">
-            <div class="col-lg-4">
+            <div class="col-lg-4 d-flex align-items-stretch">
               <div class="one">
                 <i class="bx bx-location-plus"></i>
                 <h5>Office</h5>
@@ -105,7 +105,7 @@
                 <p>2972 Westheimer Rd. Santa Ana, Illinois 85486</p>
               </div>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-4 d-flex align-items-stretch">
               <div class="one">
                 <i class="bx bx-envelope"></i>
                 <h5>Email</h5>
@@ -113,7 +113,7 @@
                 <p>tim.jennings@example.com</p>
               </div>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-4 d-flex align-items-stretch">
               <div class="one">
                 <i class="bx bxs-phone"></i>
                 <h5>Phone</h5>
@@ -123,7 +123,7 @@
             </div>
           </div>
         </div>
-        <div class="cform">
+        <div class="cform" data-aos="fade-up">
           <div><h2>Send us a message.</h2></div>
           <div class="fform">
             <form action="">
@@ -157,19 +157,12 @@
         <div class="container">
           <div class="d-flex justify-content-between align-items-center">
             <div class="one">
-              <div style="display: inline">
+              <div>
                 <img
                   style="margin-bottom: 20px"
                   src="tradeSensebalck-removebg-preview.png"
                   alt=""
                 />
-              </div>
-
-              <div style="display: inline">
-                <i class="bx bxl-facebook"></i>
-                <i class="bx bxl-instagram"></i>
-                <i class="bx bxl-twitter"></i>
-                <i class="bx bxl-pinterest-alt"></i>
               </div>
             </div>
 
@@ -179,6 +172,12 @@
                 <li><a href="#aboutus">About Us</a></li>
                 <li><a href="contact.html">Contact</a></li>
               </ul>
+            </div>
+            <div class="one">
+              <i class="bx bxl-facebook"></i>
+              <i class="bx bxl-instagram"></i>
+              <i class="bx bxl-twitter"></i>
+              <i class="bx bxl-pinterest-alt"></i>
             </div>
           </div>
         </div>
@@ -190,5 +189,9 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({ offset: 100, duration: 1000 });
+    </script>
   </body>
 </html>

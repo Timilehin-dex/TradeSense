@@ -9,13 +9,13 @@ body {
 a {
   text-decoration: none;
 }
-.main img {
-  height: 60px;
-  width: 150px;
-}
 /* header start*/
 .header {
   padding: 20px 0;
+}
+.header img {
+  height: 60px;
+  width: 150px;
 }
 .header ul {
   background-color: rgb(52, 52, 56);
@@ -23,7 +23,7 @@ a {
   padding: 8px;
 }
 /* list hover start*/
-.header .nlist {
+/* .header .nlist {
   position: relative;
   display: inline-block;
   padding-right: 10px;
@@ -40,7 +40,7 @@ a {
 }
 .header .nlist:hover .nlistdropdown {
   display: block;
-}
+} */
 .header .hmenu {
   display: none;
 }
@@ -56,8 +56,8 @@ a {
     display: block;
   }
   .header img {
-    margin-inline-end: auto;
-    width: 100px;
+    height: 40px;
+    width: 90px;
   }
 }
 /* list hover ends*/
@@ -101,8 +101,8 @@ a {
   border-radius: 90px;
 }
 @media (min-width: 300px) and (max-width: 991.98px) {
-  .header .ntrail a {
-    padding: 8px 20px;
+  .ntrail {
+    display: none;
   }
 }
 /* header end*/
@@ -115,6 +115,9 @@ a {
   line-height: 18px;
   padding: 10px 25px;
   color: #fff;
+}
+.first {
+  padding: 180px 0 90px 0;
 }
 .first .one {
   text-align: center;
@@ -130,22 +133,24 @@ a {
   color: var(--primary-color);
   font-size: 18px;
   font-weight: 500;
-  line-height: 27px;
   padding: 0 100px;
 }
 @media (min-width: 300px) and (max-width: 991.98px) {
   .first .one h2 {
-    font-size: 60px;
+    font-size: 55px;
+  }
+  .first .one p {
+    padding: 0 70px;
   }
 }
-@media (min-width: 300px) and (max-width: 750px) {
+@media (min-width: 300px) and (max-width: 571.98px) {
   .first .one h2 {
-    font-size: 40px;
+    font-size: 30px;
     letter-spacing: 0;
   }
   .first .one p {
-    font-size: 16px;
-    padding: 0;
+    font-size: 14px;
+    padding: 0 10px;
   }
 }
 /*-----*/
@@ -160,6 +165,7 @@ a {
   padding: 50px 30px;
   background-color: var(--first-color);
   border-radius: 16px;
+  width: 100%;
 }
 @media (min-width: 300px) and (max-width: 991.98px) {
   .second .one {
@@ -188,7 +194,7 @@ a {
   font-size: 16px;
   font-weight: 400;
 }
-.cform h2 {
+.second .cform h2 {
   text-align: center;
   margin: 50px;
   color: var(--primary-color);
@@ -244,10 +250,10 @@ a {
     font-size: 33px;
   }
   .second .cform .fform {
-    margin: 0 8%;
+    margin: 0 7%;
   }
 }
-@media (min-width: 300px) and (max-width: 750px) {
+@media (min-width: 300px) and (max-width: 575.98px) {
   .cform h2 {
     margin: 10px;
     font-size: 28px;
@@ -259,9 +265,8 @@ a {
 /*-----*/
 /*-----*/
 .footer {
-  padding-top: 50px;
+  padding-top: 10px;
 }
-
 .footer .one img {
   height: 45px;
   width: 100px;
@@ -297,4 +302,9 @@ a {
 }
 .footer .item ul li a:hover {
   color: var(--secondary-color);
+}
+@media (min-width: 300px) and (max-width: 991.98px) {
+  .footer .item ul {
+    display: none;
+  }
 }
