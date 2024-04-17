@@ -1,6 +1,7 @@
 body {
   scroll-behavior: smooth;
 }
+
 :root {
   --primary-color: rgb(29, 29, 31);
   --secondary-color: rgb(75, 174, 234);
@@ -67,6 +68,7 @@ a {
 .header .nlist:hover .nlistdropdown {
   display: block;
 } */
+/* list hover ends*/
 .header .hmenu {
   display: none;
 }
@@ -74,7 +76,6 @@ a {
   color: black;
   font-size: 32px;
 }
-/* list hover ends*/
 @media (min-width: 300px) and (max-width: 991.98px) {
   .header ul {
     display: none;
