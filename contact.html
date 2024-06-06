@@ -18,58 +18,60 @@
     <title>TradeSense-Contact Us</title>
   </head>
   <body>
-    <div class="header fixed-top">
-      <div class="container d-flex justify-content-between align-items-center">
-        <div>
-          <a href="index.html"
-            ><img src="image/tradeSensebalck-removebg-preview.png" alt=""
-          /></a>
-        </div>
-        <div>
-          <ul class="nav">
-            <li class="nav-item nlist">
-              <a class="nav-link nlink" href="index.html">Home </a>
-            </li>
-            <li class="nav-item nlist">
-              <a class="nav-link nlink" href="index.html#aboutus">About Us</a>
-            </li>
-
-            <!-- <li class="nav-item dropdown nlist">
-              <a
-                class="nav-link dropdown-toggle nlink"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-                href=""
-              >
-                Blog</a
-              >
-              <ul class="dropdown-menu nlistdropdown">
-                <li>
-                  <a class="dropdown-item" href="blog.html">Blog</a>
+    <div class="header-scrolled">
+      <div class="header fixed-top" id="head">
+        <div class="container">
+          <div class="d-flex justify-content-between align-items-center">
+            <div>
+              <a href="index.html"
+                ><img src="image/tradeSensebalck-removebg-preview.png" alt=""
+              /></a>
+            </div>
+            <div>
+              <ul class="nav">
+                <li class="nav-item nlist">
+                  <a class="nav-link nlink" href="index.html">Home </a>
                 </li>
-                <li>
-                  <a class="dropdown-item" href="blog-single.html"
-                    >Blog Single</a
+                <li class="nav-item nlist">
+                  <a class="nav-link nlink" href="index.html#aboutus"
+                    >About Us</a
+                  >
+                </li>
+                <li class="nav-item nlist">
+                  <a
+                    class="nav-link active"
+                    style="margin-right: 0"
+                    href="contact.html"
+                  >
+                    Contact</a
                   >
                 </li>
               </ul>
-            </li> -->
-            <li class="nav-item nlist">
-              <a
-                class="nav-link active"
-                style="margin-right: 0"
-                href="contact.html"
-              >
-                Contact</a
-              >
+            </div>
+            <div class="ntrail">
+              <a href="">Request A Demo</a>
+            </div>
+
+            <div class="hmenu">
+              <i onclick="toggleOpen()" class="bx bx-menu"></i>
+            </div>
+          </div>
+        </div>
+        <div class="ham-menu">
+          <div class="menu-close">
+            <i onclick="toggleClose()" class="bx bx-x"></i>
+          </div>
+          <ol class="nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home </a>
             </li>
-          </ul>
-        </div>
-        <div class="ntrail">
-          <a href="">Request A Demo</a>
-        </div>
-        <div class="hmenu">
-          <a href=""><i class="bx bx-menu"></i></a>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#aboutus">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html"> Contact</a>
+            </li>
+          </ol>
         </div>
       </div>
     </div>
@@ -193,5 +195,6 @@
     <script>
       AOS.init({ offset: 100, duration: 1000 });
     </script>
+    <script src="index.js"></script>
   </body>
 </html>

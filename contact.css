@@ -9,11 +9,14 @@ body {
 a {
   text-decoration: none;
 }
+.header-scrolled {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
 /* header start*/
 .header {
   padding: 20px 0;
-  background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease-in, box-shadow 0.3s ease-in;
 }
 .header img {
   height: 60px;
@@ -24,44 +27,50 @@ a {
   border-radius: 90px;
   padding: 8px;
 }
-/* list hover start*/
-/* .header .nlist {
-  position: relative;
-  display: inline-block;
-  padding-right: 10px;
-}
-.nlist .nlistdropdown {
-  position: absolute;
-  display: none;
-  background-color: #fff;
-  padding: 15px 10px;
-  border-radius: 8px;
-  margin-top: 2px;
-  font-size: 14px;
-  font-weight: 400;
-}
-.header .nlist:hover .nlistdropdown {
-  display: block;
-} */
 .header .hmenu {
   display: none;
 }
-.header .hmenu a {
+.header .hmenu i {
   color: black;
   font-size: 32px;
 }
-@media (min-width: 300px) and (max-width: 991.98px) {
-  .header ul {
-    display: none;
-  }
-  .header .hmenu {
-    display: block;
-  }
-  .header img {
-    height: 40px;
-    width: 90px;
-  }
+/*  */
+.ham-menu {
+  position: absolute;
+  height: 100vh;
+  z-index: 999;
+  width: 210px;
+  top: 0;
+  right: -100%;
+  display: none;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: 1s ease-in-out;
 }
+.menu-close {
+  padding: 20px 12px;
+  margin-bottom: 30px;
+  width: 100%;
+}
+.menu-close i {
+  font-size: 32px;
+  float: right;
+  color: black;
+}
+.ham-menu ol {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
+.ham-menu ol li a {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  padding: 10px;
+  color: var(--primary-color);
+}
+/*  */
 /* list hover ends*/
 .header .nlist .nlink {
   font-size: 14px;
@@ -102,11 +111,7 @@ a {
   color: black;
   border-radius: 90px;
 }
-@media (min-width: 300px) and (max-width: 991.98px) {
-  .ntrail {
-    display: none;
-  }
-}
+
 /* header end*/
 /*-----*/
 .test {
@@ -137,24 +142,6 @@ a {
   font-weight: 500;
   padding: 0 100px;
 }
-@media (min-width: 300px) and (max-width: 991.98px) {
-  .first .one h2 {
-    font-size: 55px;
-  }
-  .first .one p {
-    padding: 0 70px;
-  }
-}
-@media (min-width: 300px) and (max-width: 571.98px) {
-  .first .one h2 {
-    font-size: 30px;
-    letter-spacing: 0;
-  }
-  .first .one p {
-    font-size: 14px;
-    padding: 0 10px;
-  }
-}
 /*-----*/
 /*-----*/
 .second {
@@ -168,11 +155,6 @@ a {
   background-color: var(--first-color);
   border-radius: 16px;
   width: 100%;
-}
-@media (min-width: 300px) and (max-width: 991.98px) {
-  .second .one {
-    margin-top: 10px;
-  }
 }
 .second i {
   margin-bottom: 20px;
@@ -211,7 +193,7 @@ a {
 .second .cform label {
   font-size: 16px;
   font-weight: 500;
-  margin-bottom: 16px;
+  margin: 10px 0;
   color: var(--primary-color);
 }
 .second .cform input {
@@ -247,23 +229,7 @@ a {
   background-color: black;
   color: #fff;
 }
-@media (min-width: 300px) and (max-width: 991.98px) {
-  .cform h2 {
-    font-size: 33px;
-  }
-  .second .cform .fform {
-    margin: 0 7%;
-  }
-}
-@media (min-width: 300px) and (max-width: 575.98px) {
-  .cform h2 {
-    margin: 10px;
-    font-size: 28px;
-  }
-  .second .cform .fform {
-    margin: 0;
-  }
-}
+
 /*-----*/
 /*-----*/
 .footer {
@@ -308,5 +274,82 @@ a {
 @media (min-width: 300px) and (max-width: 991.98px) {
   .footer .item ul {
     display: none;
+  }
+}
+@media (min-width: 300px) and (max-width: 991.98px) {
+  .header ul {
+    display: none;
+  }
+  .header .hmenu {
+    display: block;
+  }
+  .header img {
+    height: 40px;
+    width: 90px;
+  }
+  .ham-menu {
+    display: block;
+  }
+  .ntrail {
+    display: none;
+  }
+  .first {
+    padding: 150px 0 70px 0;
+  }
+  .first .one h2 {
+    font-size: 55px;
+    letter-spacing: -2px;
+  }
+  .first .one p {
+    font-size: 16px;
+    padding: 0 70px;
+  }
+  .second {
+    padding-bottom: 70px;
+  }
+  .second .one {
+    margin-top: 10px;
+    padding: 40px 20px;
+  }
+  .second .cform h2 {
+    font-size: 33px;
+  }
+  .second .cform .fform {
+    margin: 0 7%;
+  }
+}
+@media (min-width: 300px) and (max-width: 767.98px) {
+  .second i {
+    font-size: 22px;
+  }
+  .second h5 {
+    font-size: 18px;
+  }
+  .second span {
+    font-size: 14px;
+  }
+  .second p {
+    font-size: 14px;
+  }
+  .second .cform label {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 571.98px) {
+  .first .one h2 {
+    font-size: 32px;
+    letter-spacing: 0;
+  }
+  .first .one p {
+    font-size: 14px;
+    padding: 0 10px;
+  }
+  .second .cform h2 {
+    margin: 10px;
+    font-size: 28px;
+  }
+  .second .cform .fform {
+    margin: 0;
   }
 }

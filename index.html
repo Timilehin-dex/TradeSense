@@ -14,8 +14,25 @@
       href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
     />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <link rel="stylesheet" href="index.css " />
-    <link rel="stylesheet" href="menu.css" />
     <title>TradeSense</title>
   </head>
   <body>
@@ -39,28 +56,6 @@
                       >About Us</a
                     >
                   </li>
-
-                  <!-- <li class="nav-item dropdown nlist">
-                  <a
-                    class="nav-link dropdown-toggle nlink"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                    href="blog.html"
-                  >
-                    Blog</a
-                  >
-                  <ul class="dropdown-menu nlistdropdown">
-                    <li>
-                      <a class="dropdown-item" href="blog.html">Blog</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="blog-single.html"
-                        >Blog Single</a
-                      >
-                    </li>
-                  </ul>
-                </li> -->
-
                   <li class="nav-item nlist">
                     <a
                       class="nav-link nlink"
@@ -76,37 +71,30 @@
                 <a href="">Request A Demo</a>
               </div>
               <div class="hmenu">
-                <a href="" data-bs-toggle="modal" data-bs-target="#reg-modal"
-                  ><i class="bx bx-menu"></i
-                ></a>
+                <i onclick="toggleOpen()" class="bx bx-menu"></i>
               </div>
+            </div>
+            <!--  -->
+            <div class="ham-menu">
+              <div class="menu-close">
+                <i onclick="toggleClose()" class="bx bx-x"></i>
+              </div>
+              <ol class="nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html#aboutus">About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html"> Contact</a>
+                </li>
+              </ol>
             </div>
           </div>
         </div>
       </div>
     </header>
-    <div
-      class="modal fade"
-      id="reg-modal"
-      tabindex="-1"
-      aria-labelledby="modal-title"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog" style="margin-top: 85px">
-        <div class="modal-content" style="background-color: rgb(29, 29, 31)">
-          <div class="modal-body menu-list">
-            <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="index.html#aboutus">About Us</a></li>
-              <li><a href="contact.html">Contact</a></li>
-            </ul>
-            <div class="menu-demo">
-              <a href="">Request a Demo</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
     <!---->
     <!--header ends-->
     <section class="main">
@@ -129,12 +117,11 @@
       <!--one body ends-->
     </section>
     <!---->
-    <!-- <section>
+    <section>
       <section class="two-body">
         <div class="container">
           <div style="text-align: center">
-            <img class="img-fluid" src="image/bodyimage.jpeg" alt="" />
-             <div style="padding-top: 110px">
+            <div style="padding-top: 110px">
               <div>
                 <h5 style="margin-bottom: 50px">TRUSTED BY INDUSTRY LEADERS</h5>
               </div>
@@ -142,7 +129,36 @@
           </div>
         </div>
       </section>
-       <div class="logos">
+      <!-- <div class="owl-carousel owl-theme">
+        <div class="item">
+          <img src="image/logo-black-1.png" alt="" />
+        </div>
+        <div class="item">
+          <img src="image/logo-black-2.png" alt="" />
+        </div>
+        <div class="item">
+          <img src="image/logo-black-3.png" alt="" />
+        </div>
+        <div class="item">
+          <img src="image/logo-black-1.png" alt="" />
+        </div>
+        <div class="item">
+          <img src="image/logo-black-2.png" alt="" />
+        </div>
+        <div class="item">
+          <img src="image/logo-black-3.png" alt="" />
+        </div>
+        <div class="item">
+          <img src="image/logo-black-1.png" alt="" />
+        </div>
+        <div class="item">
+          <img src="image/logo-black-2.png" alt="" />
+        </div>
+        <div class="item">
+          <img src="image/logo-black-3.png" alt="" />
+        </div>
+      </div> -->
+      <div class="logos">
         <div class="logos-slide">
           <img src="image/logo-black-1.png" alt="" />
           <img src="image/logo-black-2.png" alt="" />
@@ -151,7 +167,6 @@
           <img src="image/logo-black-2.png" alt="" />
           <img src="image/logo-black-3.png" alt="" />
         </div>
-
         <div class="logos-slide">
           <img src="image/logo-black-1.png" alt="" />
           <img src="image/logo-black-2.png" alt="" />
@@ -161,7 +176,7 @@
           <img src="image/logo-black-3.png" alt="" />
         </div>
       </div>
-    </section>-->
+    </section>
 
     <!--prices-->
     <section class="prices" data-aos="fade-up">
@@ -321,15 +336,13 @@
     </section>
     <!--markets & category-->
 
-    <!---->
+    <!--the platform-->
     <section class="second" data-aos="fade-up">
       <div class="container">
         <div class="row">
           <div class="col-lg-5" style="align-content: center">
             <div class="image">
               <img class="img-fluid" src="image/omo.jpeg" alt="" />
-              <!-- <img class="img-fluid a" src="image/phone1.jpeg" alt="" />
-              <img class="img-fluid b" src="image/phone2.jpeg" alt="" /> -->
             </div>
           </div>
           <div class="col-lg-7 about">
@@ -402,7 +415,7 @@
         </div>
       </div>
     </section>
-    <!---->
+    <!--the platform-->
 
     <!--work flow-->
     <section class="third">
@@ -584,15 +597,15 @@
                 <a
                   href="https://play.google.com/store/games?hl=en&gl=US"
                   target="_blank"
-                  ><img src="image/google play.png" alt=""
+                  ><img class="img-fluid" src="image/google play.png" alt=""
                 /></a>
                 <a href="https://www.apple.com/app-store/" target="_blank">
-                  <img src="image/ios.png" alt=""
+                  <img class="img-fluid" src="image/ios.png" alt=""
                 /></a>
               </div>
             </div>
           </div>
-          <div class="col-lg-5 phone">
+          <div class="col-lg-5">
             <div class="phone">
               <img class="img-fluid" src="image/Phone.png" alt="" />
             </div>
@@ -635,8 +648,18 @@
       </div>
     </footer>
     <!---->
-
-    <script src="index.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
@@ -646,5 +669,6 @@
     <script>
       AOS.init({ offset: 100, duration: 1000 });
     </script>
+    <script src="index.js"></script>
   </body>
 </html>
